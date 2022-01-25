@@ -75,7 +75,7 @@ public class ExportExcelService {
     private String createPathExport() {
         File dir = new File(LocationConstants.PATH_EXPORT_EXCEL);
         if (!dir.exists()) {
-            dir.mkdir();
+            dir.mkdirs();
         }
         return LocationConstants.PATH_EXPORT_EXCEL +
                 new StringBuilder()
